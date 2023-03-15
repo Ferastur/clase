@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Crea Passwords</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+<h1>GENERADOR DE PASSWORD</h1>  
+<div id="PideDatos">
+  <div>
+  <p>Longitud 
+<input type="number" id="longitud" placeholder="Longitud" min=6 max=100 value="15"></p>  
+</div>
+<label><input type="checkbox" id="cbox1" value="first_checkbox"> Minúsculas</label><br>
+<label><input type="checkbox" id="cbox2" value="second_checkbox"> Mayúsculas</label><br>
+<label><input type="checkbox" id="cbox3" value="third_checkbox"> Car. especiales</label><br>
+<label><input type="checkbox" id="cbox4" value="fourth_checkbox"> Números</label><br>
+  </div>
+
+<input type="submit" value="GENERAR" onclick="creaclave();">
+  
+<div id="salida">
+<input type="text" id="resultado">
+</div>  
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
